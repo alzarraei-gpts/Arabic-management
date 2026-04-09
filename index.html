@@ -30,7 +30,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&amp;family=Tajawal:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=3YvKUXWjyfc0516mKxqtgOroh9r46fsZ95HTzu3a6uTwFXCq0PPAPCAOPDjVKAUg1ZhAuIg2IG37bfc8EK61HvKSOFQN2ND0_XduhUK-k9fdYsj2Yby-0KhlPKdFbB_oA-DUYWqRMGAzxMvFAZU00270A0nyCPYJO8MWpXKsbP6R0VhOUTZc7rjv4OatEhziXd5o4i7YOIULQroWLdQMFE-CNToh80IVimt3DmEykekfH7KfF6Uc6S8HsKOlpMCvzmLKwJkz1HTa4j4cDhUC8Q" charset="UTF-8"></script><script charset="UTF-8" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=S-u7pbVm0Txby_ETt0gBUcvrr_A6RVsYXozjjLBF6vqQghvQeWvewBggIyidD1fPg9DczjODaQF4qvJS-y_umLwmAdbGAXr7BBeNnfOy_lVlAlYxGca0gr35hYFC8HMHQv0FbqEbtISOpT6oOAE02kjLTyKsHX4HDiYLlKDT4TspgD6IsYsCZ6zjdOM70IW6TFQivwK4CKFlYKsrpZ1DmAFYqwTT8uR5oE2X7bpFayKu1DOTtlGSsVto8VyzyeNUpCuhr0oRkaLHbHKgWAHVog" type="text/javascript"></script><style>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=CrpKAhRqFA4tvI8_1LONRaxgPA-rZE58LdW1RwT4oiFTCerQ02nexlJVBKsSGuPycTBZZp5FKbqdx5nL6gDvJ9Fpu7yY3ZwSU7JfSQnqNV8VmIhQTim27LgWEslNVXh37oUoN56J3Hr15DYydUvMm0ftuXQWcrR1D4SXl67rtFCPywfiudV-jpakIFawCkTKFmfPyQZ3WRGpn_-5oPrcR7rWAOH5rSNpXajQbKSAVzQaGc9Otei6W-6kNpAWa0FbhCVnsCfAQZh9ekWbAV1LwQ" charset="UTF-8"></script><script charset="UTF-8" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=S-u7pbVm0Txby_ETt0gBUcvrr_A6RVsYXozjjLBF6vqQghvQeWvewBggIyidD1fPg9DczjODaQF4qvJS-y_umLwmAdbGAXr7BBeNnfOy_lVlAlYxGca0gr35hYFC8HMHQv0FbqEbtISOpT6oOAE02kjLTyKsHX4HDiYLlKDT4TspgD6IsYsCZ6zjdOM70IW6TFQivwK4CKFlYKsrpZ1DmAFYqwTT8uR5oE2X7bpFayKu1DOTtlGSsVto8VyzyeNUpCuhr0oRkaLHbHKgWAHVog" type="text/javascript"></script><style>
 *{box-sizing:border-box}
 :root{
   --bg:#060809;
@@ -1803,6 +1803,13 @@ applySearch();
 const scrollTopBtn = document.getElementById('scrollTopBtn');
 window.addEventListener('scroll', () => {
   scrollTopBtn.style.display = window.scrollY > 450 ? 'block' : 'none';
+});
+
+
+document.querySelectorAll('.category-toggle').forEach((btn) => {
+  btn.addEventListener('click', function () {
+    toggleCategory(this);
+  });
 });
 </script>
 </body>
